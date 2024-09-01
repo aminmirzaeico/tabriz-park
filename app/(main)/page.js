@@ -51,7 +51,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center my-10 min-w-72'>
+        <div className='flex flex-col items-center justify-center my-10 w-full'>
           <h1 className='w-full font-bold text-3xl my-6 text-center '>سوالات متداول</h1>
           <FAQ />
         </div>
