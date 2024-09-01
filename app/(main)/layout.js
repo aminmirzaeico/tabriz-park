@@ -1,7 +1,7 @@
 import { Providers } from '../providers';
 import { Vazirmatn } from "next/font/google";
 import "@/app/globals.css";
-import { MainFooter } from '../components/myFooter';
+import { MainFooter } from '../components/MainFooter';
 
 const vazirmatn = Vazirmatn({ subsets: ["latin", "arabic"] });
 
