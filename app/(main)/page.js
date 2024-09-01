@@ -45,8 +45,8 @@ export default function Home() {
           <h1 className='w-full font-bold text-3xl my-6 text-center '>لیست پارکینگ ها</h1>
 
           <div className='flex flex-row gap-3 flex-wrap items-center justify-center p-3' dir="rtl">
-            {parkings.parkings.map((parking) => (
-              <ParkingCard name={parking.name} address={parking.address}
+            {parkings.parkings.map((parking, index) => (
+              <ParkingCard key={index} name={parking.name} address={parking.address}
                 capacity={parking.capacity} freeSpace={parking.freeSpace} imageUrl={parking.imageUrl} />
             ))}
           </div>
