@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="relative  flex flex-col items-center justify-start bg-white dark:bg-[#1a1a1a]">
       <Navbar />
-      <div className="relative flex flex-col flex-wrap w-[97%] sm:w-[95%] md:w-[95%] mt-28 bg-green-50 dark:bg-slate-900 text-slate-900 dark:text-slate-50 p-2 lg:px-32 min-h-screen z-10 rounded-lg pb-5 -mb-32">
+      <div className="relative flex flex-col flex-wrap w-[97%] sm:w-[95%] md:w-[95%] mt-28 bg-green-50 dark:bg-slate-700 text-slate-900 dark:text-slate-50 p-2 lg:px-32 min-h-screen z-10 rounded-lg pb-5 -mb-32">
         <div className='flex flex-col md:flex-row text-center md:text-right w-full items-center md:items-start md:p-10'>
           <div className='md:w-full h-full'>
             <Image

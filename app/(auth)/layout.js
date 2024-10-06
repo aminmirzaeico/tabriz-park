@@ -17,7 +17,7 @@ export default function AuthLayout({ children }) {
         <html lang="fa" dir="rtl" className='p-0 m-0 bg-green-400'>
             <body className={vazirmatn.className}>
                 <Providers>
-                    <main className='min-h-screen'>
+                    <main>
                         {children}
                     </main>
                 </Providers>

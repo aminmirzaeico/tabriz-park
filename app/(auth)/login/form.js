@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation'
+import Link from "next/link";
+import Image from "next/image";
 
 export function Form() {
     const [phoneNum, setPhone] = useState("");
@@ -127,6 +129,35 @@ export function Form() {
                         {isSent ? "تایید" : "ورود"}
                     </button>
                 </div>
+                {!isSent && (
+                    <>
+                        <div class="inline-flex items-center justify-center w-full">
+                            <hr class="w-2/3 h-px my-5 bg-slate-400 border-0 dark:bg-gray-600" />
+                            <span class="absolute px-2 text-sm text-slate-400 -translate-x-1/2
+                        bg-slate-50 dark:bg-slate-900 left-1/2
+                        dark:text-gray-600">یا ورود از طریق</span>
+                        </div>
+                        <div className="w-2/3 my-3 ">
+                            <button className="w-full text-white bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700
+                                hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800
+                                shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-800/80 font-medium rounded-lg text-sm
+                                px-5 py-2.5 text-center me-2 mb-2 
+                                transition-transform hover:ease-in duration-[5000] 
+                                flex justify-center items-center">
+                                <Link href="/">
+                                    <Image
+                                        src="/SsoTitle.png"
+                                        alt="Parke Man Logo"
+                                        className="invert scale-125"
+                                        width={100}
+                                        height={0}
+                                        priority
+                                    />
+                                </Link>
+                            </button>
+                        </div>
+                    </>
+                )}
             </div>
         </form>
     );
